@@ -18,25 +18,24 @@ class Car
   def mpg
     if gallons == 0
       return "cannot be determined"
-    end
+    else
     return (endMiles - startMiles) / gallons
+    end
   end
 
-#  def gasHog?
-#    mpg < 15.0
-#  end
+  def gasHog?
+    mpg < 15.0
+  end
 
-#  def economyCar?
-#    mpg > 30.0
-#  end
+  def economyCar?
+    mpg > 30.0
+  end
 
 end
 
-test = Car.new(0.0)
-test.fillUp(450.0, 9.0)
-puts test.mpg
-#test = Car.new(0.0)
-#puts test.fillUp(450.0, 9.0).mpg
+#test = Car.new(50)
+#test.fillUp(100, 5)
+#puts test.mpg
 
 
 
